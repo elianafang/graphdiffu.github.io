@@ -25,7 +25,7 @@
 
 
   <title>GraphDiffu</title>
-  <link rel="icon" type="image/x-icon" href="static/images/graphdiffuICON.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/weblogo-yuan.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -54,7 +54,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">GraphDiffu: A Graph-Driven Diffusion Model for 3D Human Pose Estimation with Autonomous Motion Pattern Learning</h1>
+            <h1 class="title is-1 publication-title">🕸️GraphDiffu: A Graph-Driven Diffusion Model for 3D Human Pose Estimation with Autonomous Motion Pattern Learning</h1>
               <div class="author-list">
                 <a href="#">Fangjing Li</a><sup>a,b</sup>,
                 <a href="#">Zhihai Wang</a><sup>a,b</sup>,
@@ -130,12 +130,34 @@
   </div>
 </section>
 
+<!-- Video carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/0507TS5noGT.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/0507TS6noGT.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
 <!-- Teaser video-->
-<section class="section hero teaser is-light">
+<!-- <section class="section hero teaser is-light">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/wild.mp4"
         type="video/mp4">
       </video>
@@ -144,18 +166,18 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero">
-  <div class="container" style="max-width: 50%; margin: 0 auto;">
+  <div class="container" style="max-width: 60%; margin: 0 auto;">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths" style="width: 100%;">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified abstract-text">
           <p>
-            Accurate 3D human pose estimation requires an in-depth understanding of anatomical constraints and the dynamic interactions between joints, as even minor estimation errors in joint coupling can lead to significant mistakes in motion analysis. For example, coordinated movement between the knee and ankle during sprinting or complex coupling between the shoulder and elbow during a throwing motion is crucial for realistic reconstruction. In this work, we propose GraphDiffu, a novel diffusion-based framework designed to automatically learn natural human motion patterns that enforce anatomical constraints and capture complex inter-joint interactions to enhance 3D human pose estimation. The core of GraphDiffu is the Neighborhood Relationship Interactor (NRI), which models the interactions between anatomically connected joints to simulate the coordinated activation of human joints, thereby avoiding erroneous motion estimations and reducing minor errors in joint coupling. To assist NRI, our framework employs Dual Semantic Prompts (DSP) that utilize dynamic prompts to capture the temporal sequence dependencies in motion through their memorability and static prompts to encode the spatial sequence dependencies of different body parts for stability. In addition, during the reverse denoising process, we integrate a Time-Aware Modulator (TA) that adaptively adjusts the denoising intensity at each step to accommodate varying motion rhythms. Extensive experimental results demonstrate that GraphDiffu outperforms state-of-the-art methods and exhibits excellent performance in wild scenarios. Code and model demonstrations are available online.
+            Accurate 3D human pose estimation requires an in-depth understanding of anatomical constraints and the dynamic interactions between joints, as even minor estimation errors in joint coupling can lead to significant mistakes in motion analysis. For example, coordinated movement between the knee and ankle during sprinting or complex coupling between the shoulder and elbow during a throwing motion is crucial for realistic reconstruction. In this work, we propose GraphDiffu, a novel diffusion-based framework designed to automatically learn natural human motion patterns that enforce anatomical constraints and capture complex inter-joint interactions to enhance 3D human pose estimation. The core of GraphDiffu is the Neighborhood Relationship Interactor (NRI), which models the interactions between anatomically connected joints to simulate the coordinated activation of human joints, thereby avoiding erroneous motion estimations and reducing minor errors in joint coupling. To assist NRI, our framework employs Dual Semantic Prompts (DSP) that utilize dynamic prompts to capture the temporal sequence dependencies in motion through their memorability and static prompts to encode the spatial sequence dependencies of different body parts for stability. In addition, during the reverse denoising process, we integrate a Time-Aware Modulator (TA) that adaptively adjusts the denoising intensity at each step to accommodate varying motion rhythms. Extensive experimental results demonstrate that GraphDiffu outperforms state-of-the-art methods and exhibits excellent performance in wild scenarios.
           </p>
         </div>
       </div>
@@ -185,7 +207,7 @@
             <img src="static/gif/Purchases 1.gif"/>
             <img src="static/gif/Sitting 1.gif"/>
             <img src="static/gif/SittingDown.gif"/>
-            <img src="static/gif/Smoking 2.gif"/>
+            <img src="static/gif/Smoking 1.gif"/>
             <img src="static/gif/Waiting 1.gif"/>
             <img src="static/gif/WalkDog 1.gif"/>
           </div>
@@ -221,41 +243,6 @@
   </div>
 </section> -->
 <!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
-
-
-
-
 
 
 <!-- Paper poster -->

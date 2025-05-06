@@ -36,7 +36,7 @@ body {
 }
 
 .container.is-max-desktop {
-  max-width: 55% !important; /* 允许容器占据整个页面宽度 */
+  max-width: 65% !important; /* 允许容器占据整个页面宽度 */
   width: 100% !important; /* 强制宽度为 100% */
 }
 
